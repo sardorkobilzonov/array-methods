@@ -1,0 +1,77 @@
+header {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #000;
+}
+header .header__title {
+  display: flex;
+  align-items: center;
+}
+header .header__title h1 {
+  color: #fff;
+  font-size: 48px;
+  font-weight: 400;
+}
+
+main .section__arrayMethods {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+main .section__arrayMethods .arrayMethods {
+  padding-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+main .section__arrayMethods .arrayMethods .card__arrayMethods {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: #fff;
+  width: 100%;
+  max-width: 450px;
+  height: 470px;
+  border: 1px solid;
+  border-radius: 10px;
+  border: none;
+  background-color: #000;
+  padding: 20px 20px;
+}
+main .section__arrayMethods .arrayMethods .card__arrayMethods .card__title {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 400;
+}
+main .section__arrayMethods .arrayMethods .card__arrayMethods .card__syntax {
+  font-size: 20px;
+  font-weight: 500;
+}
+main .section__arrayMethods .arrayMethods .card__arrayMethods .syntax {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+}
+main .section__arrayMethods .arrayMethods .card__arrayMethods .example {
+  font-size: 20px;
+  font-weight: 500;
+}
+main .section__arrayMethods .arrayMethods .card__arrayMethods .example__code {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1400px;
+  margin: auto;
+  padding: 0 20px;
+}/*# sourceMappingURL=style.css.map */

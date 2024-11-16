@@ -1,0 +1,52 @@
+main {
+  .section__arrayMethods {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    .arrayMethods {
+        padding-top: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+      .card__arrayMethods {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        color: #fff;
+        width: 100%;
+        max-width: 450px;
+        height: 470px;
+        border: 1px solid;
+        border-radius: 10px;
+        border: none;
+        background-color: #000;
+        padding: 20px 20px;
+        .card__title{
+            text-align: center;
+            font-size: 22px;
+            font-weight: 400;
+
+        }
+        .card__syntax{
+            font-size: 20px;
+            font-weight: 500;
+        }
+        .syntax{
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 25px;
+        }
+        .example{
+            font-size: 20px;
+            font-weight: 500;       
+         }
+         .example__code{
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 25px;
+         }
+
+      }
+    }
+  }
+}

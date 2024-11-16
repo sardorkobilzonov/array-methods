@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array mathods</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header__title">
+          <h1>Array mathods</h1>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <section class="section__arrayMethods">
+        <div class="arrayMethods">
+
+          <div class="card__arrayMethods">
+            <div class="card__title">copyWithin()</div>
+            <div class="card__syntax">Syntax</div>
+              <div class="syntax">
+                copyWithin(target, start) <br>
+                copyWithin(target, start, end)
+              </div>
+              <div class="example">Example</div>
+              <div class="example__code">const array1 = ['a', 'b', 'c', 'd', 'e'];<br>
+                // Copy to index 0 the element at index 3<br>
+                console.log(array1.copyWithin(0, 3, 4));<br>
+                // Expected output: Array ["d", "b", "c", "d", "e"]<br>
+                
+                // Copy to index 1 all elements from index 3 to the end<br>
+                console.log(array1.copyWithin(1, 3));<br>
+                // Expected output: Array ["d", "d", "e", "d", "e"]</div>
+              </div>
+              <div class="card__arrayMethods">
+                <div class="card__title">fill()</div>
+              <div class="card__syntax">Syntax</div>
+              <div class="syntax">
+                fill(value) <br>
+                fill(value, start) <br>
+                fill(value, start, end) <br>
+              </div>
+              <div class="example">Example</div>
+              <div class="example__code">
+                const array1 = [1, 2, 3, 4]; <br>
+                
+                // Fill with 0 from position 2 until position 4 <br>
+                console.log(array1.fill(0, 2, 4)); <br>
+                // Expected output: Array [1, 2, 0, 0] <br>
+                
+                // Fill with 5 from position 1 <br>
+                console.log(array1.fill(5, 1)); <br>
+                // Expected output: Array [1, 5, 5, 5] <br>
+                <br>
+                console.log(array1.fill(6));
+                // Expected output: Array [6, 6, 6, 6] <br></div>
+              </div>
+              <div class="card__arrayMethods">
+                <div class="card__title">pop()</div>
+                <div class="card__syntax">Syntax</div>
+                <div class="syntax">
+                  pop()
+                </div>
+                <div class="example">Example</div>
+                <div class="example__code">
+                  const plants = ['broccoli', 'cauliflower', 'cabbage', 'kale', 'tomato']; <br>
+                  
+                  console.log(plants.pop()); <br>
+                  // Expected output: "tomato" <br>
+                  
+                  console.log(plants); <br>
+                  // Expected output: Array ["broccoli", "cauliflower", "cabbage", "kale"] <br>
+                  
+                  plants.pop(); <br>
+                  
+                  console.log(plants); <br>
+                  // Expected output: Array ["broccoli", "cauliflower", "cabbage"] <br>
+                </div>
+              </div>
+            </div>
+
+            <div class="arrayMethods">
+
+              <div class="card__arrayMethods">
+                <div class="card__title">push(v1, v2)</div>
+                <div class="card__syntax">Syntax</div>
+                  <div class="syntax">
+                    push() <br>
+                     push(element1) <br>
+                     push(element1, element2) <br>
+                  </div>
+                  <div class="example">Example</div>
+                  <div class="example__code">
+                    const animals = ['pigs', 'goats', 'sheep']; <br>
+
+                     const count = animals.push('cows'); <br>
+                     console.log(count); <br>
+                     // Expected output: 4 <br>
+                     console.log(animals); <br>
+                     // Expected output: Array ["pigs", "goats", "sheep", "cows"] <br>
+                     
+                     animals.push('chickens', 'cats', 'dogs'); <br>
+                     console.log(animals); <br>
+                   </div>
+                  </div>
+                  <div class="card__arrayMethods">
+                    <div class="card__title">reverse()</div>
+                  <div class="card__syntax">Syntax</div>
+                  <div class="syntax">
+                    reverse()
+                  </div>
+                  <div class="example">Example</div>
+                  <div class="example__code">
+                    const array1 = ['one', 'two', 'three']; <br>
+                    console.log('array1:', array1); <br>
+                    // Expected output: "array1:" Array ["one", "two", "three"] <br>
+                    
+                    const reversed = array1.reverse(); <br>
+                    console.log('reversed:', reversed); <br>
+                    // Expected output: "reversed:" Array ["three", "two", "one"] <br>
+                    
+                    // Careful: reverse is destructive -- it changes the original array. <br>
+                    console.log('array1:', array1); <br>
+                    </div>
+                  </div>
+                  <div class="card__arrayMethods">
+                    <div class="card__title">shift()</div>
+                    <div class="card__syntax">Syntax</div>
+                    <div class="syntax">
+                      shift()
+                    </div>
+                    <div class="example">Example</div>
+                    <div class="example__code">
+                      const array1 = [1, 2, 3];  <br>
+
+                      const firstElement = array1.shift();  <br>
+                      
+                      console.log(array1);  <br>
+                      // Expected output: Array [2, 3]  <br>
+                      
+                      console.log(firstElement);  <br>
+                      // Expected output: 1  <br>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="arrayMethods">
+
+                  <div class="card__arrayMethods">
+                    <div class="card__title">unshift(v1, v2)</div>
+                    <div class="card__syntax">Syntax</div>
+                      <div class="syntax">
+                        unshift()  <br>
+                         unshift(element1)  <br>
+                         unshift(element1, element2)  <br>
+                      </div>
+                      <div class="example">Example</div>
+                      <div class="example__code">
+                        const array1 = [1, 2, 3]; <br>
+
+                        console.log(array1.unshift(4, 5)); <br>
+                        // Expected output: 5 <br>
+                        
+                        console.log(array1); <br>
+                        // Expected output: Array [4, 5, 1, 2, 3] <br>
+                       </div>
+                      </div>
+                      <div class="card__arrayMethods">
+                        <div class="card__title">splice()</div>
+                      <div class="card__syntax">Syntax</div>
+                      <div class="syntax">
+                        splice(start) <br>
+                        splice(start, deleteCount) <br>
+                        splice(start, deleteCount, item1) <br>
+                      </div>
+                      <div class="example">Example</div>
+                      <div class="example__code">
+                        const months = ['Jan', 'March', 'April', 'June']; <br>
+                          months.splice(1, 0, 'Feb'); <br>
+                          // Inserts at index 1 <br>
+                          console.log(months); <br>
+                          // Expected output: Array ["Jan", "Feb", "March", "April", "June"] <br>
+                          
+                          months.splice(4, 1, 'May'); <br>
+                          // Replaces 1 element at index 4 <br>
+                          console.log(months); <br>
+                        </div>
+                      </div>
+                      <div class="card__arrayMethods">
+                        <div class="card__title">	slice(0, -1)</div>
+                        <div class="card__syntax">Syntax</div>
+                        <div class="syntax">
+                          slice()  <br>
+                          slice(start)  <br>
+                          slice(start, end)    <br>                      </div>
+                        <div class="example">Example</div>
+                        <div class="example__code">
+                          const animals = ['ant', 'bison', 'camel', 'duck', 'elephant'];  <br>
+
+                           console.log(animals.slice(2));  <br>
+                           // Expected output: Array ["camel", "duck", "elephant"]  <br>
+                           
+                           console.log(animals.slice(2, 4));  <br>
+                           // Expected output: Array ["camel", "duck"]  <br>
+                           
+                           console.log(animals.slice(1, 5));  <br>
+                           // Expected output: Array ["bison", "camel", "duck", "elephant"]  <br>
+                           
+                           
+                        </div>
+                      </div>
+                    </div>
+                <div class="arrayMethods">
+
+                  <div class="card__arrayMethods">
+                    <div class="card__title">sort()</div>
+                    <div class="card__syntax">Syntax</div>
+                      <div class="syntax">
+                        sort() <br>
+                         sort(compareFn) <br>
+                      </div>
+                      <div class="example">Example</div>
+                      <div class="example__code">
+                        const months = ['March', 'Jan', 'Feb', 'Dec'];  <br>
+                        months.sort();  <br>
+                        console.log(months);  <br>
+                        // Expected output: Array ["Dec", "Feb", "Jan", "March"]  <br>
+                        
+                        const array1 = [1, 30, 4, 21, 100000];  <br>
+                        array1.sort();  <br>
+                        console.log(array1);  <br>
+                        // Expected output: Array [1, 100000, 21, 30, 4]  <br>
+                       </div>
+                      </div>
+                      <div class="card__arrayMethods">
+                        <div class="card__title">slice(1)</div>
+                      <div class="card__syntax">Syntax</div>
+                      <div class="syntax">
+                        slice()  <br>
+                        slice(start)  <br>
+                        slice(start, end)  <br>
+                      </div>
+                      <div class="example">Example</div>
+                      <div class="example__code">
+                        const animals = ['ant', 'bison', 'camel', 'duck', 'elephant'];  <br>
+
+                        console.log(animals.slice(2));  <br>
+                        // Expected output: Array ["camel", "duck", "elephant"]  <br>
+                        
+                        console.log(animals.slice(2, 4));
+                        // Expected output: Array ["camel", "duck"]  <br>
+                        
+                        console.log(animals.slice(1, 5));  <br>
+                        // Expected output: Array ["bison", "camel", "duck", "elephant"]  <br>
+                        
+                       
+                        </div>
+                      </div>
+                      <div class="card__arrayMethods">
+                        <div class="card__title">concat([v1, v2])</div>
+                        <div class="card__syntax">Syntax</div>
+                        <div class="syntax">
+                          concat()  <br>
+                          concat(value1)  <br>
+                          concat(value1, value2)     <br>               
+                         </div>
+                        <div class="example">Example</div>
+                        <div class="example__code">
+                          const array1 = ['a', 'b', 'c'];  <br>
+                          const array2 = ['d', 'e', 'f'];  <br>
+                          const array3 = array1.concat(array2);  <br>
+                          
+                          console.log(array3);  <br>
+                          // Expected output: Array ["a", "b", "c", "d", "e", "f"]  <br>
+                           
+                           
+                        </div>
+                      </div>
+                    </div>
+            </section>
+      </div>
+    </main>
+  </body>
+</html>
